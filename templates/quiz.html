@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">Quiz App</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/quiz">Quiz</a></li>
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Quiz Content in a Box -->
+    <div class="quiz-container">
+        <h1>Quiz Page</h1>
+        <form action="/submit_quiz" method="POST">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <p><strong>1. What is the capital of France?</strong></p>
+                <input type="radio" name="q1" value="Paris" id="q1a">
+                <label for="q1a">Paris</label><br>
+                <input type="radio" name="q1" value="London" id="q1b">
+                <label for="q1b">London</label><br>
+                <input type="radio" name="q1" value="Berlin" id="q1c">
+                <label for="q1c">Berlin</label><br>
+                <input type="radio" name="q1" value="Madrid" id="q1d">
+                <label for="q1d">Madrid</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <p><strong>2. Which planet is known as the Red Planet?</strong></p>
+                <input type="radio" name="q2" value="Mars" id="q2a">
+                <label for="q2a">Mars</label><br>
+                <input type="radio" name="q2" value="Jupiter" id="q2b">
+                <label for="q2b">Jupiter</label><br>
+                <input type="radio" name="q2" value="Earth" id="q2c">
+                <label for="q2c">Earth</label><br>
+                <input type="radio" name="q2" value="Venus" id="q2d">
+                <label for="q2d">Venus</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-question">
+                <p><strong>3. Who wrote the play "Romeo and Juliet"?</strong></p>
+                <input type="radio" name="q3" value="William Shakespeare" id="q3a">
+                <label for="q3a">William Shakespeare</label><br>
+                <input type="radio" name="q3" value="Charles Dickens" id="q3b">
+                <label for="q3b">Charles Dickens</label><br>
+                <input type="radio" name="q3" value="Mark Twain" id="q3c">
+                <label for="q3c">Mark Twain</label><br>
+                <input type="radio" name="q3" value="Jane Austen" id="q3d">
+                <label for="q3d">Jane Austen</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="quiz-question">
+                <p><strong>4. Which element has the chemical symbol 'O'?</strong></p>
+                <input type="radio" name="q4" value="Oxygen" id="q4a">
+                <label for="q4a">Oxygen</label><br>
+                <input type="radio" name="q4" value="Gold" id="q4b">
+                <label for="q4b">Gold</label><br>
+                <input type="radio" name="q4" value="Hydrogen" id="q4c">
+                <label for="q4c">Hydrogen</label><br>
+                <input type="radio" name="q4" value="Silver" id="q4d">
+                <label for="q4d">Silver</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="quiz-question">
+                <p><strong>5. What is the largest ocean on Earth?</strong></p>
+                <input type="radio" name="q5" value="Pacific Ocean" id="q5a">
+                <label for="q5a">Pacific Ocean</label><br>
+                <input type="radio" name="q5" value="Atlantic Ocean" id="q5b">
+                <label for="q5b">Atlantic Ocean</label><br>
+                <input type="radio" name="q5" value="Indian Ocean" id="q5c">
+                <label for="q5c">Indian Ocean</label><br>
+                <input type="radio" name="q5" value="Arctic Ocean" id="q5d">
+                <label for="q5d">Arctic Ocean</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="quiz-question">
+                <p><strong>6. How many continents are there on Earth?</strong></p>
+                <input type="radio" name="q6" value="7" id="q6a">
+                <label for="q6a">7</label><br>
+                <input type="radio" name="q6" value="6" id="q6b">
+                <label for="q6b">6</label><br>
+                <input type="radio" name="q6" value="5" id="q6c">
+                <label for="q6c">5</label><br>
+                <input type="radio" name="q6" value="8" id="q6d">
+                <label for="q6d">8</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="quiz-question">
+                <p><strong>7. Who is the author of the Harry Potter series?</strong></p>
+                <input type="radio" name="q7" value="J.K. Rowling" id="q7a">
+                <label for="q7a">J.K. Rowling</label><br>
+                <input type="radio" name="q7" value="J.R.R. Tolkien" id="q7b">
+                <label for="q7b">J.R.R. Tolkien</label><br>
+                <input type="radio" name="q7" value="George R.R. Martin" id="q7c">
+                <label for="q7c">George R.R. Martin</label><br>
+                <input type="radio" name="q7" value="C.S. Lewis" id="q7d">
+                <label for="q7d">C.S. Lewis</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

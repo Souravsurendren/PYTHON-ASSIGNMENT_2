@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": ["Paris", "Berlin", "Madrid", "Rome"],
+        "answer": "Paris"
+    },
+    {
+        "id": 2,
+        "question": "Who wrote 'Hamlet'?",
+        "options": ["Charles Dickens", "J.K. Rowling", "William Shakespeare", "Mark Twain"],
+        "answer": "William Shakespeare"
+    },
+    {
+        "id": 3,
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Mars", "Jupiter", "Earth", "Venus"],
+        "answer": "Mars"
+    },
+    {
+        "id": 4,
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["Oxygen", "Gold", "Hydrogen", "Silver"],
+        "answer": "Oxygen"
+    },
+    {
+        "id": 5,
+        "question": "What is the largest ocean on Earth?",
+        "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+        "answer": "Pacific Ocean"
+    },
+    {
+        "id": 6,
+        "question": "How many continents are there on Earth?",
+        "options": ["7", "6", "5", "8"],
+        "answer": "7"
+    },
+    {
+        "id": 7,
+        "question": "Who is the author of the Harry Potter series?",
+        "options": ["J.K. Rowling", "J.R.R. Tolkien", "George R.R. Martin", "C.S. Lewis"],
+        "answer": "J.K. Rowling"
+    }
+]

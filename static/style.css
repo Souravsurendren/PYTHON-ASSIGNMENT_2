@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f5d8e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.5rem;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    width: 100%;
+    background-color: #2980b9;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #1f5d8e;
+}
+
+/* Adjust container to account for fixed navbar */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Push content down so it's not hidden under the navbar */
+    border: 2px solid #bdc3c7;
+    box-sizing: border-box;
+}
+
+/* Input and Button Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #bdc3c7;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #2980b9;
+}
+
+button, .button {
+    padding: 12px 25px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover, .button:hover {
+    background-color: #1f5d8e;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Radio Button Styling */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 1rem;
+    color: #34495e;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Quiz Page Container */
+.quiz-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border: 2px solid #bdc3c7;
+    box-sizing: border-box;
+    margin: 50px auto; /* Center the container */
+}
+
+/* Quiz Questions Styling */
+.quiz-question {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.quiz-question:hover {
+    background-color: #f0f3f5;
+    border-color: #2980b9;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for anchor buttons */
+a.button {
+    text-decoration: none;
+    color: white;
+    background-color: #2980b9;
+    padding: 12px 25px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+a.button:hover {
+    background-color: #1f5d8e;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Results Page */
+.result p {
+    font-size: 1.2rem;
+    color: #16a085;
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result h1 {
+    color: #27ae60;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Footer (optional) */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.footer a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #1f5d8e;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button, .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
